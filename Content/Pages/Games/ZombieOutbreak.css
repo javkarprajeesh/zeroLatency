@@ -1,0 +1,405 @@
+﻿
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #020d11;
+}
+
+p {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6, strong {
+    color: #fff;
+    font-family: 'Montserrat';
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.subtitle {
+    color: #41bded;
+    font-family: 'Ignis et Glacies Extra Sharp';
+}
+
+a {
+    color: #41bded;
+    text-decoration: none;
+}
+
+.button {
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #41bded;
+    display: block;
+    padding: 20px 30px;
+    font-family: Montserrat;
+}
+
+a.button:hover {
+    background-color: #41bded;
+}
+
+section {
+    padding: 30px;
+}
+
+/* Navigation */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 20px 0;
+    z-index: 100;
+}
+
+
+.zerolatency {
+    background-image: url(../../../Images/ZeroLatency-2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    display: block;
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.zerolatency > span {
+    display: none;
+}
+
+.nav-menu-button {
+    background-image: url(../../../Images/menuIcon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    left: calc(50% - 15px);
+}
+
+.nav-menu-button > span {
+    display: none;
+}
+
+.book-now {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 8px 20px;
+    font-size: 12px;
+}
+
+.book-now .now-text {
+    display: none;
+}
+
+/* Intro */
+.intro {
+    background-image: url(../../../Images/Games/Outbreak/outbreakBackground.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    padding: 100px 0;
+}
+
+.intro h1 {
+    background-image: url(../../../Images/Games/Outbreak/ZombieOutbreaklogo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    height: 110px;
+}
+
+.intro h1 > span {
+    display: none;
+}
+
+.intro h2, .intro h3 {
+    text-align: center;
+    margin: 0;
+    text-shadow: 0px 3px 2px black;
+}
+
+.intro h3 {
+    font-size: 18px;
+    margin-top: 0;
+}
+
+.intro div.video-container {
+    margin: 10px auto 50px auto;
+    width: 90%;
+    position: relative;
+    padding-bottom: 42%;
+    padding-top: 30px;
+    height: 0;
+}
+
+.intro div.video-container iframe {
+    position: absolute;
+    border: 2px solid rgba(49, 62, 81, 0.7);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.intro div.video-container a.button {
+    position: absolute;
+    bottom: -110px;
+    left: 0;
+    right: 0;
+    display: block;
+    text-align: center;
+    background-color: #41bded;
+    font-family: 'Ignis et Glacies Extra Sharp';
+    font-size: 30px;
+    padding: 20px 10px;
+    max-width: 500px;
+    margin: 20px auto 0;
+    transition: all 300ms ease-in-out;
+}
+
+.intro div.video-container a.button:hover {
+    animation: pulse 500ms infinite alternate;
+}
+
+@keyframes pulse {
+    0% {
+        -webkit-box-shadow: unset;
+        -moz-box-shadow: unset;
+        box-shadow: unset;
+    }
+    100% {
+        -webkit-box-shadow: 0 0 5px 0 rgba(112,172,245,0.9);
+        -moz-box-shadow: 0 0 30px 0 rgba(112,172,245,0.9);
+        box-shadow: 0 0 30px 0 rgba(112,172,245,0.9);
+    }
+}
+
+
+
+section div.details {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+section div.details article {
+    width: 50%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+section div.details article span {
+    display: block;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #fff;
+}
+
+section div.details article strong {
+    font-size: 48px;
+    color: #41bded;
+}
+
+/* Story */
+.story {
+    padding: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.story .title {
+    text-align: center;
+}
+
+.story .title h2 {
+    font-size: 36px;
+}
+
+.story .content article {
+    width: 100%;
+}
+
+
+.story img {
+    width: 440px;
+    height: 340px;
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+    align-self: center;
+    object-fit: cover;
+}
+
+.story h2, .story h3 {
+    margin: 0;
+}
+
+.story h3, .story strong {
+    font-size: 16px;
+}
+
+.story .content {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 50px 0;
+}
+
+.story .content article div {
+    padding: 10px;
+}
+
+/* Call to Action */
+.call-to-action {
+    text-align: center;
+    padding: 30px;
+    background-color: #020d11;
+}
+
+.call-to-action > div {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    position: relative;
+    background-color: #0a1316;
+}
+
+.call-to-action div a.button {
+    display: block;
+    border: 2px solid rgba(0, 186, 255, 0.5);
+    margin: 10px 0;
+    background-color: transparent;
+    font-size: 18px;
+}
+
+.call-to-action div a.button:hover {
+    background-color: rgba(90, 206, 250, 0.25);
+}
+
+
+/* Quote */
+.quote {
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.quote:before {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-image: url(../../../Images/quoteIcon.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: auto;
+}
+
+.quote blockquote {
+    text-transform: none;
+    font-size: 22px;
+    max-width: 700px;
+    margin: auto;
+    padding: 30px 20px;
+}
+
+.quote blockquote p {
+    text-transform: none;
+    text-align: center;
+}
+
+.quote blockquote cite {
+}
+
+.quote blockquote cite img {
+    width: 150px;
+    margin: 0 auto;
+    display: block;
+}
+
+
+
+@media(min-width: 600px) {
+
+    .intro {
+        background-position: center top;
+        background-size: cover;
+    }
+
+    .story .content article:nth-child(2n) {
+        flex-direction: row-reverse;
+    }
+
+    
+    .call-to-action div {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .quote blockquote cite img {
+        width: 350px;
+    }
+}
+
+@media(min-width: 900px) {
+
+
+    section > div {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .intro {
+        background-size: contain;
+        padding-top: 350px;
+    }
+
+    .intro h1 {
+        height: 300px;
+    }
+
+    .intro div.video-container { max-width: 1000px; }
+
+    /* Explore */
+    section div.details article {
+        width: 25%;
+    }
+
+    .story .content article {
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+        align-items: center;
+    }
+
+    .story .content article div {
+        width: 50%;
+        padding: 30px 45px;
+    }
+
+}
+
+@media(min-width: 1400px) {
+    
+}

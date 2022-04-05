@@ -1,0 +1,140 @@
+<div>
+    <div class="footer-container">
+<!--        <section class="newsletter-div">
+            <content class="newsletter-content" id="subscribeForm" data-success="success" data-error="error">
+                <article data-page="commercial-subscribe" class="with-buttons current">
+                    <h3>Subscribe to our Newsletter</h3>
+                    <div class="subscription-div">
+                        <input type="text" placeholder="Your email address" id="txtEmail" class="requiredField email" onkeypress="return isEmail(event)"/>
+                        <button class="button subscribeClick">Subscribe</button>
+                        <div class="error-message-update requiredEmail" data-for="Email" data-type="required">Please provide your email</div>
+                        <div class="error-message-update invaliedEmail" data-for="Email" data-type="required">Please provide valid email</div>
+                    </div>
+                </article>
+                <article class="subscribeSuccess">
+                    <p>Thank you for your subscribing with us.</p>
+                </article>
+                <article class="subscribeFailure">
+                    <p>Could not process your enquiry, please try again</p>
+                    <a data-go="commercial-subscribe">Click here to try again</a>
+                </article>
+            </content>
+        </section>-->
+        <div class="social-links">
+            <a class="social" href="https://www.facebook.com/Zero-Latency-India-Mumbai-2050892871687663/" target="_blank" rel="noopener" style="background-image: url('media/1029/facebook.png')"><span>Facebook</span></a>
+            <a class="social" href="https://www.instagram.com/zerolatencymumbai/" target="_blank" rel="noopener" style="background-image: url('media/1031/instagram.png')"><span>Instagram</span></a>
+            <a class="social" href="https://twitter.com/ZeroLatencyMum" target="_blank" rel="noopener" style="background-image: url('media/1030/twitter.png')"><span>Twitter</span></a>
+            <a class="social" href="https://www.linkedin.com/company/zero-latency-mumbai" target="_blank" rel="noopener" style="background-image: url('media/1053/linkedin.png')"><span>LinkedIn</span></a>
+            <a class="social" href="https://www.youtube.com/channel/UCCTNWsgtphyrpjbyyQN1qVA/videos?view_as=subscriber" target="_blank" rel="noopener" style="background-image: url('media/1032/youtube.png')"><span>Youtube</span></a>
+        </div>
+        <div class="other-links">
+            <a href="/"><img src="Images/zeroLatency.png" alt="Zero Latency" title="Zero Latency" /></a>
+            <ul>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="waiver.html">Waiver</a></li>
+                <li><a href="terms.html">Terms</a></li>
+            </ul>
+            <p><small>Zero Latency Arena Unit No. 1, New Mahalaxmi Silk Mills Premises Mathurdas Mills Compound, Next to Levis Lounge, Todi Mills, Lower Parel, Mumbai 400013, Maharashtra India</small></p>
+            <p><small>© 2019 ZERO LATENCY MUMBAI</small></p>
+        </div>
+    </div>
+</div>
+
+<div class="cookiediv">
+    <p>By clicking "Agree & Proceed" you are agreeing to the use of cookies to personalize and enhance your experience of using this site, allowing us to serve you content and marketing that best suit your preferences through the data we collect. <a href="cookie.html">Cookie Details</a></p>
+    <button class="button cookiesBtn">Agree & Proceed</button>
+    <span class="closeCook"></span>
+</div>
+
+<div class="connectwith-us getInTouch-us">
+    <a href="#"><span>Get in touch</span></a>
+    <!--<article data-page="commercial-subscribe" class="with-buttons current">-->
+        <div class="getintouch">
+            <div class="current">
+                <input type="text" placeholder="Mobile No." name="Mobile" maxlength="10" id="txtMobile" class="requiredField onlyNum mobilenumber" onkeypress="return isNumber(event)"/>
+                <div class="error-message-update requiredMob" data-for="Email" data-type="required">Please provide your number</div>
+                <div class="error-message-update invaliedMob" data-for="Email" data-type="required">Please provide valid number</div>
+                <button class="button getintouchClick">Send</button>
+            </div>
+            <article class="getintouch getintouchSuccess">
+                <p>Thank you for your enquiry</p>
+            </article>
+            <article class="getintouch getintouchFailure">
+                <p class="errorMain">Could not process your enquiry, please try again</p>
+                <p class="errorSub" data-go="commercial-getintouch">Click here to try again</p>
+            </article>
+        </div>
+    <!--</article>-->
+    
+</div>
+
+<script>
+    $(document).ready(function(){
+        $(".connectwith-us a").click(function(){
+            $('.mobilenumber').val('');
+            $('.error-message-update, .getintouchSuccess, .getintouchFailure').hide();
+            $(".connectwith-us").toggleClass("connectwith-open");           
+            $('.current').show();
+        });
+        
+        $(document).on("click", ".bookTkt", function(){
+        //     $(".field-error-update").removeClass('field-error-update');
+        //     $('.error-message-update').hide();
+        //   $(document).find('#book-show').show();
+        });
+        $(document).on("click", ".book-close", function(){
+            $(document).find('#book-show').hide();
+        });
+        $(".closeCook").click(function(){
+            $(".cookiediv").css("display", "none");
+        });
+    });
+</script>
+
+
+<!--<script src="Scripts/Pages/Layout308d.js?v=20180924040910"></script>-->
+
+<script src="Scripts/Validation373f.js?v=20190131225313"></script>
+<script src="Scripts/EnquiryFormf88e.js?v=20180913063038"></script>
+<script src="Scripts/Pages/footer.js"></script>
+<script src="../Scripts/Pages/footer.js"></script>
+
+<script>
+    $(document).ready(function(){ 
+        setTimeout(function(){ 
+            var user = accessCookie("testCookie");
+            if (user!="") console.log(user,"user");
+            else{$('.cookiediv').show();}
+        }, 3000);
+   
+        var locPath = window.location.href;
+        if(locPath.indexOf('/games/') >= 0){
+            $('.other-links img').attr('src', '../'+footerImg);
+        }else{
+            $('.connectwith-us.getInTouch-').show();
+            $('.newsletter-content').show();
+        }
+        
+        $(document).on("click", ".cookiesBtn", function(){
+            console.log("testCookie","user");
+            createCookie("testCookie", 'user', '12');
+        }); 
+        function createCookie(cookieName,cookieValue,daysToExpire){
+          var date = new Date();
+          date.setTime(date.getTime()+(daysToExpire*24*60*60*1000));
+          document.cookie = cookieName + "=" + cookieValue + "; expires=" + date.toGMTString();
+          $('.cookiediv').hide();
+        }
+        function accessCookie(cookieName){
+          var name = cookieName + "=";
+          var allCookieArray = document.cookie.split(';');
+          for(var i=0; i<allCookieArray.length; i++)
+          {
+            var temp = allCookieArray[i].trim();
+            if (temp.indexOf(name)==0)
+            return temp.substring(name.length,temp.length);
+             }
+        	return "";
+        }
+    });
+</script>

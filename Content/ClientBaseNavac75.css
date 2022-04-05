@@ -1,0 +1,118 @@
+﻿/* Client nav */
+.top-nav {
+    background-color: #000;
+    padding: 20px;
+    border-bottom: 1px solid rgba(37, 107, 134, 0.3);
+    font-size: 0;
+    position: relative;
+}
+
+.top-nav a {
+    font-size: 18px;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.language-selector {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 250px;
+    font-size: 18px;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+}
+
+
+.language-selector .current:after {
+    display: block;
+    position: absolute;
+    content: '';
+    /*background-color: #f00;*/
+    top: 20px;
+    right: 20px;
+    width: 22px;
+    height: 22px;
+    background-image: url(../Images/selectArrowWhite.png);
+    background-repeat: no-repeat;
+    background-size: 20px auto;
+    background-position: center;
+    transition: all ease-in-out 0.15s;
+}
+
+.language-selector .current:before {
+    display: block;
+    position: absolute;
+    content: '';
+    /*background-color: #f00;*/
+    top: 10px;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+    background-image: url(../Images/globeWhite.png);
+    background-repeat: no-repeat;
+    background-size: 30px auto;
+    background-position: center;
+}
+
+.language-selector .current {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    text-align: center;
+    background-size: 45px auto;
+    background-position: 15px center;
+    padding-top: 22px;
+    background-color: #000;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.language-selector .current:hover {
+    background-color: #1d323b;
+}
+
+.language-selector nav {
+    position: absolute;
+    top: 62px;
+    left: 0;
+    right: 0;
+    background-color: #000;
+    border: 1px solid rgba(65, 192, 240, 0.2);
+    border-right: none;
+    border-top: none;
+    display: block;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-70px);
+    transition: all ease-in-out 0.15s;
+}
+
+.language-selector.show-menu nav {
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0);
+}
+
+.language-selector nav a {
+    display: block;
+    background-repeat: no-repeat;
+    background-size: 45px auto;
+    background-position: 15px center;
+    border-top: 1px solid rgba(65, 192, 240, 0.1);
+    padding: 12px;
+    text-align: center;
+    margin: 0;
+}
+
+.language-selector nav a:hover {
+    background-color: rgba(65, 192, 240, 0.1);
+}

@@ -1,0 +1,158 @@
+﻿.intro-section {
+    background-image: url(../../Images/contactBackground.jpg);
+}
+
+.head-quarters {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    background-image: url(../../Images/spaceImagery.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.head-quarters strong {
+    font-weight: 500;
+    display: block;
+}
+
+.head-quarters .address {
+    display: block;
+    margin: 30px 0;
+    font-weight: 400;
+    line-height: 180%;
+}
+
+.head-quarters:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(2,13,17,1) 0%, rgba(2,13,17,0) 100%);
+}
+
+.head-quarters > content {
+    position: relative;
+    z-index: 1;
+}
+
+.enquiry-form textarea {
+    height: 200px;
+}
+
+/* Other enquiries */
+.other-enquiries {
+    padding: 50px 0;
+}
+
+
+.other-enquiries .locations {
+    list-style-type: none;
+}
+
+.other-enquiries .locations li {
+    padding: 0;
+    margin: 0;
+}
+
+.other-enquiries .locations:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.other-enquiries .locations a {
+    display: block;
+    margin: 20px;
+    padding: 30px;
+}
+
+.social-section .social-links {
+    list-style-type: none;
+    text-align: center;
+    margin: 50px 0;
+    display: none;
+}
+
+.social-section .social-links li {
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.3;
+    transition: all ease-in-out 0.3s;
+    margin: 0;
+    padding: 0;
+}
+
+.social-section .social-links li a {
+    padding: 0 40px;
+}
+
+.social-section .social-links li:hover {
+    opacity: 1;
+}
+
+.social-section .social-links li.facebook {
+    background-image: url(../../Images/facebook.png);
+}
+
+.social-section .social-links li.twitter {
+    background-image: url(../../Images/twitter.png);
+}
+
+.social-section .social-links li.instagram {
+    background-image: url(../../Images/instagram.png);
+}
+
+.social-section .social-links li.youtube {
+    background-image: url(../../Images/youtube.png);
+}
+
+.other-site-info {
+    font-size: 14px;
+    margin: 10px auto;
+    text-align: left;
+}
+
+.social-section .social-links a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 0 20px;
+}
+
+.g-recaptcha {
+    padding-top: 15px;
+}
+
+@media (min-width: 1025px) {
+    .enquiry-form textarea {
+        height: 347px;
+    }
+
+    .other-enquiries .locations li {
+        display: inline-block;
+    }
+
+    .other-enquiries .locations a {
+        display: inline-block;
+        min-width: 270px;
+        margin: 10px;
+    }
+
+    .social-section .social-links {
+        display: block;
+        margin-top: 150px;
+    }
+
+    .g-recaptcha {
+        position: absolute;
+        right: 0;
+    }
+}

@@ -1,0 +1,53 @@
+﻿@font-face {
+    font-family: 'ZL GLIF';
+    src: url('ZLGLIF-Regular.html');
+    src: url('ZLGLIF-Regular-2.html') format('woff2'), url('ZLGLIF-Regular-3.html') format('woff'), url('ZLGLIF-Regular-4.html') format('truetype'), url('ZLGLIF-Regular-5.html#ZLGLIF-Regular') format('svg'), url('ZLGLIF-Regulard41d.html?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ignis et Glacies Extra Sharp';
+    src: url('./Fonts/Ignis\ et\ Glacies\ Extra\ Sharp.ttf');
+}
+
+body > main {
+    margin-bottom: 0;
+}
+
+.base-footer > div {
+    margin: 0;
+    padding: 25px;
+}
+
+.base-footer > div.getInTouch-us {
+    padding: 0;
+}
+
+html {
+}
+
+.base-header {
+    background: none;
+}
+
+body {
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-family: 'Exo 2', sans-serif;
+    color: #c2cad8;
+    background-color: #181f2a;
+}
+
+section, article {
+    display: block;
+    box-sizing: border-box;
+}
+
+@media (max-width: 480px) {
+    .base-header {
+        background: linear-gradient(to bottom, rgba(2,13,17,1) 0%, rgba(2,13,17,1) 100%);
+        background: #000;
+        margin-top: 0;
+    }
+}

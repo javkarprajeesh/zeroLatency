@@ -1,0 +1,249 @@
+﻿.intro-section {
+    background-image: url(../../Images/careersBackground.jpg);
+}
+
+.quote {
+    max-width: 700px;
+}
+
+.quoter {
+    color: #999;
+    font-weight: 300;
+}
+
+
+.main-section content {
+    max-width: 770px;
+    padding-top: 150px;
+}
+
+/* Gallery */
+.gallery {
+    width: 100%;
+    margin: 40px 0;
+    position: relative;
+}
+
+.gallery, .gallery-items {
+    height: 400px;
+}
+
+.gallery-nav {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: -80px;
+    right: -80px;
+    z-index: 4;
+}
+
+.gallery-nav a {
+    display: block;
+    background-color: rgba(65, 190, 237, 0.2);
+    border: 2px solid #41beed;
+    width: 40px;
+    height: 40px;
+    transform: translateY(-50%);
+    position: absolute;
+    cursor: pointer;
+    z-index: 5;
+    transform: rotate(45deg);
+    transition: all ease-in-out 0.2s;
+}
+
+.gallery-nav a:hover {
+    background-color: rgba(65, 190, 237, 0.4);
+}
+
+.gallery-nav a > span {
+    display: none;
+}
+
+.gallery-nav a.next {
+    right: 0;
+}
+
+.gallery-nav a:after {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-image: url(../../Images/dropDownArrowWhite.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 15px auto;
+    transform: rotate(45deg);
+}
+
+.gallery-nav a.next:after {
+    transform: rotate(225deg);
+}
+
+.gallery-items {
+    position: relative;
+}
+
+.gallery-items > div {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0;
+    transition: all ease-in-out 0.5s;
+}
+
+.gallery-items > div.active {
+    z-index: 3;
+    opacity: 1;
+}
+
+/* Opportunities */
+.no-opportunities {
+    margin-bottom: 100px;
+    font-size: 20px;
+}
+
+.opportunities content {
+    max-width: 770px;
+}
+
+.opportunities article {
+    border-bottom: 2px solid rgba(65, 190, 237, 0.4);
+    padding: 30px 0;
+    margin: auto;
+}
+
+.opportunities article:last-child {
+    border-bottom: none;
+}
+
+.opportunities article h3 {
+    margin: 0;
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: none;
+    margin-bottom: 5px;
+}
+
+.opportunities article .location {
+    display: block;
+    color: #41beed;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin: 0;
+}
+
+.opportunities article p {
+    margin: 20px 0;
+}
+
+.opportunities article .button {
+    display: inline-block;
+}
+
+.enquire-section p {
+    text-align: center;
+}
+
+.upload-area {
+    border: 2px solid rgba(65, 190, 237, 0.4);
+    padding: 20px;
+    text-align: center;
+}
+
+.attachment-section {
+    text-align: left;
+}
+
+.attachment-section input {
+    display: none;
+}
+
+.attachment-section .button {
+    margin: 0;
+    width: unset;
+    display: inline-block;
+    margin-top: 10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.attachment-section .filename-label {
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+.follow-us {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.follow-us p {
+    margin-bottom: 30px;
+}
+
+.social-links {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+.social-links li {
+    display: inline-block;
+}
+
+.social-links li a {
+    display: block;
+    height: 50px;
+    width: 50px;
+    margin: 0 30px;
+    background-image: url(../../Images/facebook.png);
+    background-size: contain;
+}
+
+.upload-button {
+    text-transform: none;
+}
+
+.upload-button.error {
+    color: #ff5050;
+    border-color: rgba(255, 0, 0, 0.7);
+}
+
+.upload-button.error:hover {
+    background-color: rgba(255, 0, 0, 0.2);
+}
+
+@media (min-width: 1025px) {
+    .g-recaptcha {
+        position: absolute;
+        right: 0;
+        bottom: 55px;
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery-nav {
+        left: 10px;
+        right: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .social-links li a {
+        margin: 0 10px;
+    }
+    .newsletter-content {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

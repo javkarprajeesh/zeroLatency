@@ -1,0 +1,202 @@
+﻿body > main {
+    margin-bottom: 0;
+}
+
+.intro-section {
+    position: relative;
+    background-image: url(../../Images/Mobile/whatToExpectBackground.jpg);
+}
+
+.virtual-reality {
+    margin-bottom: 0;
+    background-image: url(../../Images/Mobile/zeroLatencyVrPlayers.jpg);
+    background-size: contain;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-image: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    margin: auto;
+    width: auto;
+}
+
+.how-it-works {
+}
+
+.physical-space {
+    background-image: url(../../Images/spaceImagery.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    padding: 80px 0;
+}
+
+.equipment .nav-arrows {
+    display: none;
+}
+
+.controls {
+}
+
+.controls .controller {
+    background-image: url(../../Images/gunController.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 140px;
+    margin: 100px 0;
+}
+
+.other-games article {
+    background-image: url(../../Images/Games/engineeriumBackground.html);
+    height: 900px;
+    background-size: cover;
+    background-position: top center;
+}
+
+.games article:after {
+    opacity: 0.3;
+}
+
+.equipment {
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 40px;
+    margin-bottom: 0;
+}
+
+.equipment article {
+    width: 100vw;
+    float: left;
+}
+
+.equipment article .subtitle {
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.equipment article h3 {
+    margin-bottom: 10px;
+}
+
+.equipment .carousel-pages {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.equipment img {
+    transition: all ease-out 0.3s;
+    transition-delay: 0.4s;
+    transform: scale(0.8);
+}
+
+.equipment .current img {
+    transform: scale(1);
+}
+
+.faq-section {
+    display: block;
+    background-color: #091b21;
+    border: 1px solid #103340;
+    border-left: none;
+    border-right: none;
+    padding: 25px;
+    text-align: center;
+    color: #fff;
+}
+
+.faq-section h3 {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.faq-section p {
+    margin: 0;
+    font-size: 16px;
+}
+
+@media (min-width: 768px) {
+    .intro-section {
+        background-image: url(../../Images/whatToExpectBackground.jpg);
+    }
+}
+
+@media (min-width:1025px) {
+    .virtual-reality {
+        background-size: cover;
+        background-position: center 200px;
+        padding-bottom: 700px;
+        background-image: url(../../Images/townImagery.jpg);
+        position: relative;
+    }
+
+    .virtual-reality:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 200px;
+        left: 0;
+        width: 100%;
+        height: 700px;
+        background: linear-gradient(to bottom, rgba(2,13,17,1) 0%, rgba(2,13,17,0) 100%);
+        z-index: 1;
+    }
+
+    .virtual-reality.content-section content {
+        position: relative;
+        z-index: 2;
+    }
+
+    .virtual-reality .hero {
+        width: 900px;
+        height: 700px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        background-image: url(../../Images/backToBackPlayers.png);
+        background-repeat: no-repeat;
+        background-position: center 0;
+        z-index: 2;
+    }
+
+    .physical-space {
+        padding: 200px 0;
+    }
+
+    .physical-space .button {
+        display: inline-block;
+    }
+
+    .how-it-works {
+        position: relative;
+    }
+
+    .how-it-works content .half-column {
+        width: 50%;
+        padding-top: 200px;
+        padding-bottom: 100px;
+    }
+
+    .how-it-works img {
+        position: absolute;
+        top: 120px;
+        left: 50%;
+    }
+
+    .equipment .nav-arrows {
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 100px;
+        top: 450px;
+    }
+}

@@ -1,0 +1,433 @@
+<header class="base-header">
+    <div>
+        <div class="menu-left">
+            <a href="/" class="logo"><span>Zero Latency</span></a>
+        </div>
+        <a class="menu" id="ToggleMenu"><span>Menu</span></a>
+
+        <div class="menu-right">
+            <div class="account-link">
+
+<!--                <span class="label">Login</span>
+                <a href="loginfb5a.html">Account</a>-->
+            </div>
+            <!--<a class="button book-tickets bookTkt" href="javascript:">Pre - Register Now</a>-->
+            <a class="button book-tickets bookTkt" href="https://zerolatencyvr.com/mumbai/book-now" rel="nofollow">Book Now</a>
+        </div>
+    </div>
+</header>
+<nav class="base-menu">
+    <div class="main-menu-items">
+        <div class="main-menu-inner" id="MenuSlider">
+            <a href="what-to-expect.html">
+                <div class="menu-item-img" style="background-image: url('media/1013/whattoexpect.jpg')"></div>
+                <p>
+                    <span>Free-Roam VR</span>
+                    <strong>What to Expect</strong>
+                </p>
+            </a>
+            <a href="games.html">
+                <div class="menu-item-img" style="background-image: url('media/1073/medianavitem.jpg')"></div>
+                <p>
+                    <span>Our</span>
+                    <strong>Games</strong>
+                </p>
+            </a>
+            <a href="pricing.html">
+                <div class="menu-item-img" style="background-image: url('media/1040/contact.jpg')"></div>
+                <p>
+                    <span>Our</span>
+                    <strong>Pricing</strong>
+                </p>
+            </a>
+            <a href="about.html">
+                <div class="menu-item-img" style="background-image: url('media/1050/commercial.jpg')"></div>
+                <p>
+                    <strong>About Us</strong>
+                </p>
+            </a>
+            <a href="media.html">
+                <div class="menu-item-img" style="background-image: url('media/1073/medianavitem.jpg')"></div>
+                <p>
+                    <span></span>
+                    <strong>Media</strong>
+                </p>
+            </a>
+<!--            <a href="groups-corporates.html">
+                <div class="menu-item-img" style="background-image: url('media/1050/commercial.jpg')"></div>
+                <p>
+                    <span>Groups &</span>
+                    <strong>Corporates</strong>
+                </p>
+            </a>-->
+<!--            <a href="events.html">
+                <div class="menu-item-img" style="background-image: url('media/1073/medianavitem.jpg')"></div>
+                <p>
+                    <strong>Events</strong>
+                </p>
+            </a>-->
+<!--            <a href="promotions.html">
+                <div class="menu-item-img" style="background-image: url('media/1100/robots4.jpg')"></div>
+                <p>
+                    <strong>Promotions</strong>
+                </p>
+            </a>-->
+            <a href="locations.html">
+                <div class="menu-item-img" style="background-image: url('media/1011/locations.jpg')"></div>
+                <p>
+                    <span>Global</span>
+                    <strong>Locations</strong>
+                </p>
+            </a>
+            <a href="contact.html">
+                <div class="menu-item-img" style="background-image: url('media/1040/contact.jpg')"></div>
+                <p>
+                    <span>Get In Touch</span>
+                    <strong>Contact Us</strong>
+                </p>
+            </a>
+        </div>
+    </div>
+</nav>
+
+
+<div id="book-show" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close book-close"></span>
+    <div class="booknow">
+        <div class="current">
+            <label>Name</label>
+            <input type="text" name="Name" id="txtName" class="requiredField nameSpace" onkeypress="return isCharacter(event)" maxlength="100"/>
+            <div class="error-message-update invalidName" data-for="Name" data-type="required">Please provide your name</div>
+            <label>Mobile No</label>
+            <input type="text" name="Mobile" maxlength="10" id="txtMobile" class="requiredField onlyNum mobilenumber" onkeypress="return isNumber(event)" />
+            <div class="error-message-update requiredMob" data-for="Mobile" data-type="required">Please provide number</div>
+            <div class="error-message-update invaliedMob" data-for="Mobile" data-type="required">Please provide valid number</div>
+            <label>Email</label>
+            <input type="text" name="Email" id="txtEmail" class="requiredField email" onkeypress="return isEmail(event)" maxlength="50"/>
+            <div class="error-message-update requiredEmail" data-for="Email" data-type="required">Please provide email id</div>
+            <div class="error-message-update invaliedEmail" data-for="Email" data-type="required">Please provide valid email</div>
+            
+<!--            <div class="error-message-update invaliedMobEmail" data-for="EmailMob" data-type="required">Please provide email or number</div>-->
+            <button class="button booknowClick vip">Submit</button>
+            <!--<p class="linelastpoB">"Brace yourself and plunge into the alternate universe. Experience of a different reality. <b>Register Now</b> for a chance to win an entry pass to an exclusive <b>VIP week.</b>"</p>-->
+        </div>
+        <article class="booknowMsg booknowMsgAwaiting" style="display:none">
+            <p>Submitting...Please Wait!!</p>
+        </article>
+        <article class="booknowMsg booknowMsgSuccess" style="display:none">
+            <p>Thank you for your enquiry</p>
+        </article>
+        <article class="booknowMsg booknowMsgFailure" style="display:none">
+            <p class="errorMain">Could not process your enquiry, please try again</p>
+            <p class="errorSub" data-go="commercial-getintouch">Click here to try again</p>
+        </article>
+        <article class="booknowMsg booknowMsgFailure2" style="display:none">
+            <p class="errorMain">Email Id already exist.</p>
+        </article>
+        <article class="booknowMsg booknowMsgFailure3" style="display:none">
+            <p class="errorMain">Mobile Number already exist.</p>
+        </article>
+        <article class="booknowMsg booknowMsgFailure4" style="display:none">
+            <p class="errorMain">Email Id & Mobile Number already exist.</p>
+        </article>
+    </div>
+  </div>
+
+</div>
+
+<script>
+    var serverPath = window.location.origin;
+    $('a').each(function(){
+        if(!$(this).hasClass('social')){
+            if(hrefPath !== undefined){
+                var hrefPath = $(this).attr("href").replace('../','');
+                $(this).attr("href", serverPath+'/'+hrefPath);
+            }
+        }
+    })
+    
+    $('link').each(function(){
+        // if(!$(this).hasClass('social')){
+            var hrefPath = $(this).attr("href").replace('../','');
+            console.log(hrefPath);
+            if(hrefPath.indexOf("css") >= 0){
+                $(this).attr("href", serverPath+'/'+hrefPath);
+            }
+    })
+    
+    var locPath = window.location.href;
+    if(locPath.indexOf('/games/') >= 0){
+        $('.menu-item-img').each(function(){
+            var imgPath = $(this).css("background-image");
+            imgPath = imgPath.replace('/games','');
+             $(this).css("background-image", imgPath);
+        })
+        
+        $('.main-menu-inner a').each(function(){
+            var imgPath = $(this).attr("href");
+            imgPath = '../' + imgPath;
+             $(this).attr("href", imgPath);
+        })
+         
+        var footerImg = $('.other-links img').attr('src');
+        $('.other-links img').attr('src', '../'+footerImg);
+        
+    }
+    
+    function Layout() {
+    var showMenu = false;
+    var docWidth = 0;
+    var mainLinkCount = navLinkCount;
+
+    var useLargeNav = isLargeNav();
+    var largeNavWidth = 1025;
+
+    $('#MenuSlider').width(320 * mainLinkCount);
+
+    $('#ToggleMenu').on('click', function (e) {
+        scrollMenu(e.pageX);
+        $('body').toggleClass('show-nav');
+        showMenu = !showMenu;
+    });
+
+    $(document).on('mousemove', function (e) {
+        if (showMenu) {
+            scrollMenu(e.pageX);
+        }
+    });
+
+    $('.social').on('click', function (e) {
+        if (typeof Analytics !== "undefined") {
+            Analytics.trackEvent('social', 'click', e.target.text);
+        }
+    });
+
+    function scrollMenu(pageX) {
+        if (useLargeNav) {
+            var p = (pageX / docWidth); // input percentage
+            var r = docWidth * 0.2; // padding (20%)
+            var a = (320 * mainLinkCount); // slider length
+            var b = a + 2 * r;
+            var x = p * (b - docWidth) - r;
+            $('#MenuSlider').css({ 'transform': 'translateX(' + (0 - x) + 'px)' });
+        }
+    }
+
+    $(window).on('resize', resize);
+    resize();
+
+    function resize() {
+        if (hasTouchSupport()) {
+            $('body').addClass('touch');
+            $('body').removeClass('no-touch');
+        }
+        else {
+            $('body').removeClass('touch');
+            $('body').addClass('no-touch');
+        }
+
+        docWidth = $(document).width() * 1.0;
+        useLargeNav = isLargeNav();
+        if (useLargeNav) {
+            $('#MenuSlider').width(320 * mainLinkCount);
+        }
+        else {
+            $('#MenuSlider').width('auto');
+            $('#MenuSlider').css({ 'transform': 'translateX(0)' });
+        }
+    }
+
+    function isLargeNav() {
+        return (window.matchMedia('(min-width: ' + largeNavWidth + 'px)').matches) && !hasTouchSupport();
+    }
+
+    function hasTouchSupport() {
+        var prefixes = ' -webkit- -moz- -o- -ms- '.split(' ');
+        var mq = function (query) {
+            return window.matchMedia(query).matches;
+        }
+
+        if (('ontouchstart' in window) || window.DocumentTouch && document instanceof DocumentTouch) {
+            return true;
+        }
+
+        // include the 'heartz' as a way to have a non matching MQ to help terminate the join
+        // https://git.io/vznFH
+        var query = ['(', prefixes.join('touch-enabled),('), 'heartz', ')'].join('');
+        return mq(query);
+    };
+
+    var capabilities = {
+        touchSupport: 'ontouchstart' in document.documentElement
+    };
+};
+
+var layout = Layout();
+
+
+
+/**** BOOKNOW FORM ****/
+$('.error-message-update, .booknowMsgSuccess, .booknowMsgFailure, .booknowMsgFailure2, .booknowMsgFailure3, .booknowMsgFailure4, .booknowMsgAwaiting').hide();
+console.log("hide call");
+$(".booknow #txtMobile").on("keyup", function(){
+    $(".field-error-update").removeClass('field-error-update ');
+    $('.error-message-update').hide();
+    if($.trim($(this).val()) == ''){
+        $(this).addClass('field-error-update');
+        $(this).parent().find('.error-message-update.requiredMob').show();
+    }else{
+        var mobileReg = /^[6-9]{1}[0-9]{9}$/;
+        if(!mobileReg.test($.trim($(this).val()))) {
+            $(this).addClass('field-error-update');
+            $(this).parent().find('.error-message-update.invaliedMob').show();
+        }
+    }
+});
+// BOOK NOW ON CLOSE SHOW FORM AND HIDE SUCCESS AND FAILURE
+$(document).on("click", ".book-close", function(){
+    $('.error-message-update, .booknowMsgSuccess, .booknowMsgFailure, .booknowMsgFailure2, .booknowMsgFailure3, .booknowMsgFailure4').hide();
+    $("#txtName, #txtMobile, #txtEmail").val();
+    $('.current').show();
+});
+$(".booknow #txtEmail").on("keyup", function(){
+    $(".field-error-update").removeClass('field-error-update ');
+    $('.error-message-update').hide();
+    if($.trim($(this).val()) == ''){
+        $(this).addClass('field-error-update');
+        $(this).parent().find('.error-message-update.requiredEmail').show();
+    }else{
+        var emailReg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+        if(!emailReg.test($.trim($(this).val()))) {
+            $(this).addClass('field-error-update');
+            $(this).parent().find('.error-message-update.invaliedEmail').show();
+        }
+    }
+});
+
+$(document).on("click", ".booknowMsgFailure, .booknowMsgFailure2, .booknowMsgFailure3, .booknowMsgFailure4", function(){
+    $('.booknowMsgSuccess, .booknowMsgFailure, .booknowMsgFailure2, .booknowMsgFailure3, .booknowMsgFailure4').hide();   
+    $('.booknow .current').show();
+    $(".field-error-update").removeClass('field-error-update ');
+    $('.error-message-update').hide();
+});
+
+$('.booknowClick').on('click', function () {
+    $(".field-error-update").removeClass('field-error-update');
+    $('.error-message-update').hide();
+    hasError = false;
+    $('.booknow .requiredField').each(function() {
+        if($.trim($(this).val()) == '') {
+            if($(this).hasClass('nameSpace')){
+                $(this).addClass('field-error-update');
+                $(this).parent().find('.error-message-update.invalidName').show();
+                hasError = true;
+            }
+            if($(this).hasClass('mobilenumber')){
+                $(this).addClass('field-error-update');
+                $(this).parent().find('.error-message-update.requiredMob').show();
+                hasError = true;
+            }
+            if($(this).hasClass('email')){
+                $(this).addClass('field-error-update');
+                $(this).parent().find('.error-message-update.requiredEmail').show();
+                hasError = true;
+            }
+        }
+    });
+//    if($('.booknow #txtMobile').val() == "" && $('.booknow #txtEmail').val() == ""){
+//        console.log("both blank");
+//        $('.booknow').find('.error-message-update.invaliedMobEmail').show();
+//        hasError = true;
+//    }else{
+//        if($('.booknow #txtEmail').val() != "" && $('.booknow #txtMobile').val() != ""){
+//            console.log("both data");
+//            console.log($('.booknow #txtEmail').val());
+//            console.log($('.booknow #txtMobile').val());
+//            var emailReg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+//            var emailVal = $('.booknow #txtEmail').val();
+//            if(!emailReg.test($.trim(emailVal))) {
+//                $('.booknow #txtEmail').addClass('field-error-update');
+//                $('.booknow #txtEmail').parent().find('.error-message-update.invaliedEmail').show();
+//                hasError = true;
+//            }
+//            
+//            var mobileReg = /^[6-9]{1}[0-9]{9}$/;
+//            var mobVal = $('.booknow #txtMobile').val();
+//            if(!mobileReg.test($.trim(mobVal))) {
+//                $('.booknow #txtMobile').addClass('field-error-update');
+//                $('.booknow #txtMobile').parent().find('.error-message-update.invaliedMob').show();
+//                hasError = true;
+//            }
+//        }else if($('.booknow #txtEmail').val() != ""){
+//            console.log("email data");
+//            var emailReg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+//            var emailVal = $('.booknow #txtEmail').val();
+//            if(!emailReg.test($.trim(emailVal))) {
+//                $('.booknow #txtEmail').addClass('field-error-update');
+//                $('.booknow #txtEmail').parent().find('.error-message-update.invaliedEmail').show();
+//                hasError = true;
+//            }
+//        }else if($('.booknow #txtMobile').val() != ""){
+//            console.log("mobile data");
+//            var mobileReg = /^[6-9]{1}[0-9]{9}$/;
+//            var mobVal = $('.booknow #txtMobile').val();
+//            if(!mobileReg.test($.trim(mobVal))) {
+//                $('.booknow #txtMobile').addClass('field-error-update');
+//                $('.booknow #txtMobile').parent().find('.error-message-update.invaliedMob').show();
+//                hasError = true;
+//            }
+//        }
+//    }
+    
+    
+    if(hasError == false){
+        $('.booknowMsgAwaiting').show();
+        var name = $('.booknow #txtName').val();
+        var email = $('.booknow #txtEmail').val();
+        var mobile = $('.booknow #txtMobile').val();
+        var data = "Name="+name+"&Email="+email+"&Mobile="+mobile;
+
+//            var formData = new FormData($(this)[0]);
+
+        $.ajax({
+            type: "post",
+            crossDomain: "true",
+            processData: false,
+            url : "https://www.postboxcommunications.com/apps/Social/enquiry/zerolatencyvr/booking.php",
+            data: data,
+            beforeSend: function(){ },
+            success: function(data){
+                //console.log(data);
+                $('.booknowMsgAwaiting').hide();
+                if(data == '-1') {
+                    $('.booknowMsgFailure2').show();   
+                    $('.booknow .current').hide();
+                }else if(data == '-2') {
+                    $('.booknowMsgFailure3').show();   
+                    $('.booknow .current').hide();
+                }else if(data == '-3') {
+                    $('.booknowMsgFailure4').show();   
+                    $('.booknow .current').hide();
+                }else if(data == 'success') {
+                    $('.booknow #txtEmail, .booknow #txtMobile, .booknow #txtName').val('');
+                    $('.booknowMsgSuccess').show();    
+                    $('.booknow .current').hide();
+                }else{
+                    $('.booknowMsgFailure').show();   
+                    $('.booknow .current').hide();
+                }
+            }
+        });
+
+    }
+
+    return false;
+});
+
+
+
+
+</script>

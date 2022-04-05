@@ -1,0 +1,187 @@
+.intro-section {
+    background-image: url(../../Images/locationsBackground5e1f.jpg?v=2);
+}
+
+.intro-section .subtitle {
+    text-shadow: 0 0 10px #000;
+}
+
+.select-location {
+    margin-bottom: 60px;
+}
+
+.location-details {
+    border-top: 2px solid #38bcee;
+    padding-top: 50px;
+}
+
+.location-details h4 {
+    font-size: 14px;
+    color: #38bcee;
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: 10px
+}
+
+.location-details h3 {
+    margin: 0;
+}
+
+.location-details ul {
+    text-align: left;
+    list-style-type: none;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.location-details content {
+    position: relative;
+}
+
+.location-details ul li {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 3px;
+}
+
+.map {
+    position: relative;
+    background-color: #183a46;
+    border-bottom: 2px solid #38bcee;
+    width: auto;
+    padding-top: 75%;
+    margin: 0 -25px;
+}
+
+.map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.button.get-directions {
+    background-color: #01090c;
+    position: relative;
+    top: -25px;
+    max-width: 300px;
+    margin: auto;
+}
+
+.hours table th {
+    padding-right: 30px;
+    font-weight: 300;
+}
+
+@media (min-width: 768px) {
+    .location-form {
+        display: flex;
+        margin: 0 -10px;
+    }
+
+    .location-form > div {
+        width: 50%;
+        margin: 0 10px;
+    }
+
+    .location-details {
+        border: none;
+        padding: 0;
+    }
+
+    .location-details-inner {
+        min-height: 450px;
+        padding: 60px;
+        text-align: left;
+        border: 2px solid #38bcee;
+        position: relative;
+        margin: auto;
+        margin-bottom: 100px;
+    }
+
+    .location-details > content {
+    }
+
+    .location-details-content {
+        width: 60%;
+        padding-right: 30px;
+    }
+
+    .map {
+        position: absolute;
+        right: 0;
+        width: 380px;
+        top: 0;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        border: none;
+        overflow: hidden;
+        background-color: #003042;
+    }
+
+    .location-details .button {
+        position: absolute;
+        bottom: -25px;
+        top: auto;
+        left: 60px;
+        height: 50px;
+        width: 250px;
+    }
+
+    .location-details .button.get-directions {
+        left: auto;
+        right: 60px;
+    }
+
+    .location-details .button.get-directions:hover {
+        background-color: #183a46;
+    }
+
+    .column-details:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+
+    .column-details .hours,
+    .column-details .available-games {
+    }
+
+    .web-url {
+        font-size: 18px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 450px;
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .location-details-inner {
+        padding: 60px 60px 60px 20px;
+    }
+    .location-details-content {
+        width: 46%;
+    }
+}
+@media (max-width: 767px) {
+    .location-details-inner {
+        border-top: 1px solid rgba(66, 192, 240, 0.2);
+    }
+    .location-details {
+        border-top: none;
+    }
+} 
+@media (max-width: 480px) {
+    .location-details h3 {
+       margin-bottom: 10px;
+    }
+    .location-details-content {
+        width: 100%;
+    }
+}
