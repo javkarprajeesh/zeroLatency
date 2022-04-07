@@ -108,11 +108,12 @@ header {
 
 /* Intro */
 .intro {
-    background-image: url(../../../Images/Games/Engineerium/engineerium.png);
+    background-image: url(../../../Images/Games/Engineerium/engineerium.jpg);
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
     padding: 100px 0;
+    
 }
 
 .intro h1 {
@@ -120,6 +121,7 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+    
     display: block;
     height: 110px;
 }
